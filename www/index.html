@@ -13,21 +13,18 @@
         <div class="uk-flex uk-flex-center uk-width-1-1 uk-background-secondary uk-align-center uk-flex-middle uk-margin-bottom uk-height-small">
             <h1 class="uk-text-large uk-text-large uk-text-bold uk-text-warning">Produtos</h1>
         </div>
-        <form name="search" class="uk-padding uk-flex uk-flex-center uk-flex-column uk-width-1-1 uk-background-muted uk-align-center uk-flex-middle" method="post">
-            <div class="uk-margin">
-                <div class="uk-inline uk-width-1-1">
-                    <span class="uk-form-icon uk-form-icon-flip" uk-icon="icon: search"></span>
-                    <input id="ina" class="uk-input uk-form-width-medium uk-form-success uk-form-large uk-width-1-1" type="text" name="nome" placeholder="Pesquisar nome">
-                </div>
+        <div class="uk-margin">
+            <div class="uk-inline uk-width-1-1">
+                <span class="uk-form-icon uk-form-icon-flip" uk-icon="icon: search"></span>
+                <input id="nome" class="uk-input uk-form-width-medium uk-form-success uk-form-large uk-width-1-1" type="text" name="nome" placeholder="Pesquisar nome">
             </div>
-            <div class="uk-margin">
-                <div class="uk-inline">
-                    <span class="uk-form-icon uk-form-icon-flip" uk-icon="icon: search"></span>
-                    <input id="inb" class="uk-input uk-form-width-medium uk-form-success uk-form-large uk-width-1-1" type="number" name="preco" placeholder="Limite de preço" step="0.010" min="0">
-                </div>
+        </div>
+        <div class="uk-margin">
+            <div class="uk-inline uk-width-1-1">
+                <span class="uk-form-icon uk-form-icon-flip" uk-icon="icon: search"></span>
+                <input id="valor" class="uk-input uk-form-width-medium uk-form-success uk-form-large uk-width-1-1" type="number" name="valor" placeholder="filtrar valor maximo" step="0.010" min="0">
             </div>
-            <button class="uk-button uk-button-secondary uk-width-1-2" name="env" onclick="filtrar('ina','inb')"><b><span class="uk-margin-small-right" uk-icon="icon: refresh; ratio: 3.5"></b></span></button> 
-        </form>
+        </div>
         <div class="dados">
             
         </div>
